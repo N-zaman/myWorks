@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="div1">
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">about us.</a></li>
+                <li><a href="/contact">contact us.</a></li>
+                <li><a href="/update">Update info</a></li>
+                <li><a href="/delet">delete info</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="div2">
+        <img src="<%=data.Photos%>" alt="logo" class="img">
+    </div>
+    <div class="containar">
+        <div class="name"><%=data.Name%></div>
+    <div class="job"><%=data.Job%></div>
+    <div class="disc"><%=data.Discription%></div>
+    <div class="adrs"><%=data.Address%></div>
+    <div class="email"><%=data.Email%></div>
+    </div>
+</body>
+</html>

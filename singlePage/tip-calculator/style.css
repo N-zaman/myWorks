@@ -1,0 +1,43 @@
+body{
+    background-color:rgb(255, 255, 255);
+    font-family:"Open Sans",sans-serif;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    height:100vh
+    
+
+}
+#div1{
+    width:50%;
+    height: 200px;
+    align-content: center;
+    background-color: rgba(22, 193, 0, 0.6);
+    padding:5px;
+    
+}
+#div2{
+    width:50%;
+    height: 200px;
+    align-content: center;
+    background-color: rgba(22, 193, 0, 0.6);
+    float:right;
+    padding: 5px;
+}
+#div{
+    width: 500px;
+    height: 400px;
+    background-color:rgb(77, 66, 66);
+    font-family:"Open Sans",sans-serif;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    border: black 3px solid;
+    box-shadow:4px 3px lightblue;
+    
+}
+button{
+    margin:5px;
+    padding:3px;
+    font-size:20px;
+}

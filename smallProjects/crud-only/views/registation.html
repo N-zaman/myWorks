@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+    <style>
+        body{
+            margin:0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height:100vh;
+        }
+        input{
+            height: 20px;
+            width:400px;
+            font-size: 15px;
+            margin:10px;
+        }
+    </style>
+
+    <title>Document</title>
+</head>
+<body>
+    <form action="/registration" method="POST" enctype="multipart/form-data">
+            <div> <input type="file" name="photo" accept="image / *"><br></div>
+            <input type="text" name="nm" placeholder="input new name"><br>
+            <input type="text" name="job" placeholder="input new job"><br>
+            <input type="text" name="disc" placeholder="input new Discription"><br>
+            <input type="text" name="address" placeholder="input new address"><br>
+            <input type="text" name="email" placeholder="input current email"><br>
+        
+        <input type="submit" value="add =>">
+    </form>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>some of two number.</title>
+    <meta name="viewport" content="width=device-width,initial-scal=1.0">
+    <style>
+        body{
+            margin:auto;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            height:100vh;
+            background-color: rgb(113, 146, 135);
+        }
+        #divf{
+            width:400px;
+            background-color: rgb(69, 170, 62);
+            padding-left:40px;
+            font-size:20px;
+            color:rgb(0, 0, 0)
+
+        }
+        #div-btn{
+            width:300px;
+            display: flex;
+            justify-content: space-between;
+            padding-top: 10px;
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <div id="divf">
+    <h2>this is a calcolator.</h2>
+    
+    <from >
+        frist-digit:<input type="number" value="0" id="f-number"><br>
+    </from>
+    <from>
+        second digit:<input type="number" value="0" id="s-number"><br>
+    </from>
+    <div id="div-btn">
+    <button onclick="funcS()">sum</button>
+    <button onclick="funcSb()">sub</button>
+    <button onclick="funcM()">mult</button>
+    <button onclick="funcD()">divi</button>
+    </div>
+    <h3>RESULT::</h3>
+    <p id="demo">0</p>
+    </div>
+    <script>
+        function funcS(){
+
+            let f=document.getElementById("f-number").value;
+            
+            let s=document.getElementById("s-number").value;
+            
+            let total= parseInt(f)+parseInt(s);
+            
+
+            
+            var ff=document.getElementById("demo");
+            ff.innerText = total;
+        };
+        function funcSb(){
+
+let f=document.getElementById("f-number").value;
+
+let s=document.getElementById("s-number").value;
+
+let total= parseInt(f) - parseInt(s);
+
+
+
+var ff=document.getElementById("demo");
+ff.innerText = total;
+};
+function funcM(){
+
+let f=document.getElementById("f-number").value;
+
+let s=document.getElementById("s-number").value;
+
+let total= parseInt(f) * parseInt(s);
+
+
+
+var ff=document.getElementById("demo");
+ff.innerText = total;
+};
+function funcD(){
+
+let f=document.getElementById("f-number").value;
+
+let s=document.getElementById("s-number").value;
+
+let total= parseInt(f)/parseInt(s);
+
+
+
+var ff=document.getElementById("demo");
+ff.innerText = total;
+};
+        
+    </script>
+
+
+</body>
+
+
+
+</html>
