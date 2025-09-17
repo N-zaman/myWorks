@@ -1,4 +1,6 @@
 const scores=document.getElementById('score');
+const wrong=document.getElementById('Wrong');
+const total=document.getElementById('Total');
 const quest=document.getElementById('question');
 const btn=document.getElementById('btn');
 
@@ -7,25 +9,37 @@ let k = Math.floor(Math.random()*10);
 let d = Math.floor(Math.random()*10);
 let multiply = k*d;
 quest.innerText = 'what is '+k+' multiply by '+d+' ?';
-
+    let countCorrect=0;
+    let countWrong=0;
+    let countTotal=0;
 
 btn.addEventListener('click',function(){
     mult();
 });
 
 function mult(){
-    let count=0;
-    let vlu=document.getElementById('input').value;
-    vlu=parseInt(vlu);
+
+    const vluInput=document.getElementById('input');
+    const vlu=parseInt(vluInput.value);
  
     if(vlu===multiply) {
-        count++;
-        scores.innerText= 'score: ' + count;
+        countCorrect++;
+        scores.innerText= 'Correct-Ans: ' + countCorrect;
         
     }else{
-        count--;
-        scores.innerText = 'score: '+ count;
+        countWrong++;
+        wrong.innerText = 'Wrong-Ans: '+ countWrong;
     }
+
+    countTotal = countCorrect + countWrong;
+    total.innerText="Total-Attempt: " + countTotal
+
+    k = Math.floor(Math.random()*10);
+    d = Math.floor(Math.random()*10);
+    multiply = k*d;
+    quest.innerText = 'what is '+k+' multiply by '+d+' ?';
+
+    vluInput.value = ""
     
 
 }
