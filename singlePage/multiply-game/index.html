@@ -9,9 +9,13 @@
 </head>
 <body>
     <from class="from" id="from">
-       <h4 class="score" id="score">score: 0</h4>
-       <h1 id="question">what is 1 multiply by 1 ?</h1> 
-       <input type="text" class="input" id="input" placeholder="Enter your answer" autofocus autocomplete="off" >
+       <div class="flex">
+        <h4 class="score" id="score">Correct-Ans: 0</h4>
+        <h4 class="score" id="Wrong">Wrong-Ans: 0</h4>
+        <h4 class="score" id="Total">Total-Attempt: 0</h4>
+       </div>
+       <h1 id="question"></h1> 
+       <input type="number" class="input" id="input" placeholder="Enter your answer" autofocus autocomplete="off" >
        <button type="submit" id="btn">Submit</button>
     </from>
     <script src="script.js"></script>
